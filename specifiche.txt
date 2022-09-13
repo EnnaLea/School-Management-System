@@ -1,0 +1,37 @@
+Creazione di un School Management System per Studenti, Insegnanti e Fondi.
+
+//Sistema di gestione monetaria della scuola. 
+#azioni fondamentali
+- tenere traccia delle tasse totale degli studenti
+- tasse già pagate
+- stipendi degli insegnanti
+
+//Oggetto Scuola
+#elementi fondamentali
+- Insegnanti
+- Studenti
+- Totale soldi guadagnati > tasse studenti
+- Totale soldi spesi > stipendi insegnanti
+
+
+//Oggetto Insegnanti
+#elementi fondamentali
+- id
+- nome
+- stipendio
+
+
+//Oggetto Studenti
+- id
+- nome
+- anno
+- tasse da pagare
+- tasse totali
+
+
+//COCETTI OOP
+Per capire quanti e quali classi(oggetti) dobbiamo creare fare attenzione ai nomi usati nella specifica. I questo caso ci troviamo scuola, tasse, studenti, stipendi, insegnagnanti.
+
+
+
+

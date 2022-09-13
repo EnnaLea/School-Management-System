@@ -21,7 +21,7 @@ public class Teacher {
     public Teacher (int id, String name, int salary){
         this.salary = salary;
         this.id = id;
-        this,name = name;
+        this.name = name;
 
     }
 

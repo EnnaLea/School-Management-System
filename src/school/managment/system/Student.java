@@ -95,6 +95,16 @@ public class Student {
 		return feesPaid;
 
 	}
+
+	/**
+	 * 
+	 * @return total fees
+	 * 
+	 */
+	public int getFeesTotal(){
+		return feesTotal;
+
+	}
 	
 	
 	

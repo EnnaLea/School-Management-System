@@ -1,5 +1,6 @@
 package school.managment.system;
 
+
 //questa classe serve a tenere tracci degli studenti: tasse, anno d'iscrizione(grade), id
 
 
@@ -58,7 +59,47 @@ public class Student {
 		feesPaid += fees;
 		
 	}
+
+	/**
+	 * 
+	 * @return student id
+	 */
+	public int getID(){
+		return id;
+
+	}
+
+	/**
+	 * 
+	 * @return student name
+	 */
+	public String getName(){
+		return name;
+
+	}
+
+	/**
+	 * 
+	 * @return student grade
+	 */
+	public int getGrade(){
+		return grade;
+
+	}
+
+	/**
+	 * 
+	 * @return student payed fees
+	 */
+	public int getFeesPaid(){
+		return feesPaid;
+
+	}
 	
+	
+	
+
+
 	
 	
 	

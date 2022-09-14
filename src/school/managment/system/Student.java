@@ -10,7 +10,7 @@ public class Student {
 	private int id;
 	private String name;
 	private int grade;
-	private int feesPaid;
+	private static int feesPaid;
 	private int feesTotal;
 	
 	
@@ -29,7 +29,7 @@ public class Student {
 		this.id = id;
 		this.name = name;
 		this.grade = grade;
-		this.feesPaid = 0;//posso anche non usare this perch� non � parte dell'argomento e quindi non si crea confusione
+		feesPaid = 0;//posso anche non usare this perch� non � parte dell'argomento e quindi non si crea confusione
 			
 	}
 
@@ -55,8 +55,9 @@ public class Student {
 	 * 
 	 * @param fees that the student pays
 	 */
-	public void UpdateFeesPaid(int fees) {
+	public void payFees(int fees) {
 		feesPaid += fees;
+		School.updateTotalMoneyEarned(feesPaid);
 		
 	}
 
@@ -91,7 +92,7 @@ public class Student {
 	 * 
 	 * @return student payed fees
 	 */
-	public int getFeesPaid(){
+	public static int getFeesPaid(){
 		return feesPaid;
 
 	}
@@ -106,8 +107,22 @@ public class Student {
 
 	}
 	
+	/**
+	 * 
+	 * @return the remaining fees.
+	 */
+	public int getReamaingFees(){
+		return feesTotal - feesPaid;
+
+	}
+
+	@Override
+	public String toString (){
+		return "Student's name: " +name+ " with id: "+id+ " has paied total fees: $" +feesPaid;
+	}
 	
-	
+
+
 
 
 	

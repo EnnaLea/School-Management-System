@@ -11,8 +11,8 @@ public class School {
     
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
 
     // per generare costruttori automaticamente: CTRl + .
@@ -72,7 +72,7 @@ public class School {
  * Adds the total money earned by the school.
  * @param totalMoneyEarned that is to be added.
  */
-    public void updateTotalMoneyEarned(int MoneyEarned) {
+    public static void updateTotalMoneyEarned(int MoneyEarned) {
         totalMoneyEarned = MoneyEarned;
     }
 
@@ -88,7 +88,7 @@ public class School {
  * Update the money spent by the school
  * @param MoneySpent the money used to pay salary of teachers.
  */
-    public void updateTotalMoneySpent(int moneySpent) {
+    public static void updateTotalMoneySpent(int moneySpent) {
         totalMoneyEarned -= moneySpent;
     }
 

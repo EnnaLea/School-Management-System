@@ -24,7 +24,21 @@ public class Main {
         studentList.add(luca);
 
         School ghs = new School(teacherList, studentList);
+        
+
+        tamara.payFees(5000);
+        bill.payFees(6000);
         System.out.println("GHS has earned " + ghs.getTotalMoneyEarned());
 
+        System.out.println("--------Making GHS School pay salaries-------");
+        lizzy.receiveSalary(lizzy.getSalary());
+        System.out.println("GHS has paid " +  lizzy.getName() + " and now has $ " + ghs.getTotalMoneyEarned());
+        paolo.receiveSalary(paolo.getSalary());
+        System.out.println("GHS has paid " + lizzy.getName() + " and now has $ " + ghs.getTotalMoneyEarned());
+
+        System.out.println(luca);
+        System.out.println(melissa);
+
+// all of this shoul be on a application interface, because that's hard-coding and usually it's not done like that. 
     }
 }
